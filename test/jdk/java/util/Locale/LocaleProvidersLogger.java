@@ -1,5 +1,5 @@
 /*
- * Copyright (c) 2017, 2020, Oracle and/or its affiliates. All rights reserved.
+ * Copyright (c) 2012, 2024, Oracle and/or its affiliates. All rights reserved.
  * DO NOT ALTER OR REMOVE COPYRIGHT NOTICES OR THIS FILE HEADER.
  *
  * This code is free software; you can redistribute it and/or modify it
@@ -19,21 +19,31 @@
  * Please contact Oracle, 500 Oracle Parkway, Redwood Shores, CA 94065 USA
  * or visit www.oracle.com if you need additional information or have any
  * questions.
- *
  */
-
-package gc.stress.gclocker;
 
 /*
- * @test TestGCLockerWithParallel
- * @library /
- * @requires vm.gc.Parallel
- * @summary Stress Parallel's GC locker by calling GetPrimitiveArrayCritical while concurrently filling up old gen.
- * @run main/native/othervm/timeout=200 -Xlog:gc*=info -Xms1500m -Xmx1500m -XX:+UseParallelGC gc.stress.gclocker.TestGCLockerWithParallel
+ * @test
+ * @bug 8245241 8246721 8261919
+ * @summary Test the Locale provider preference is logged
+ * @library /test/lib
+ * @build LocaleProviders
+ * @modules java.base/sun.util.locale.provider
+ * @run junit/othervm -Djdk.lang.Process.allowAmbiguousCommands=false LocaleProvidersLogger
  */
-public class TestGCLockerWithParallel {
-    public static void main(String[] args) {
-        String[] testArgs = {"2", "PS Old Gen"};
-        TestGCLocker.main(testArgs);
+
+import org.junit.jupiter.api.Test;
+
+public class LocaleProvidersLogger {
+
+    /*
+     * 8245241 8246721 8261919: Ensure if an incorrect system property for locale providers is set,
+     * it should be logged and presented to the user. The option
+     * jdk.lang.Process.allowAmbiguousCommands=false is needed for properly escaping
+     * double quotes in the string argument.
+     */
+    @Test
+    public void logIncorrectLocaleProvider() throws Throwable {
+        LocaleProviders.test("FOO", "bug8245241Test",
+                "Invalid locale provider adapter \"FOO\" ignored.");
     }
 }
