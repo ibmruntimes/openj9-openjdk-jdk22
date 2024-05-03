@@ -70,16 +70,8 @@ add_source() {
 # Configure the known source repositories.
 #
 configure_defaults() {
-	local current_branch="$(git rev-parse --abbrev-ref HEAD)"
-	local openj9_branch=master
-	local omr_branch=openj9
-
-	# If this repository is on a release branch, use the same branch names
-	# for OpenJ9 and OMR.
-	if [[ "$current_branch" =~ (ibm-)?(v[0-9]+\.[0-9]+(\.[0-9]+)?-release) ]] ; then
-		openj9_branch="${BASH_REMATCH[2]}"
-		omr_branch="${BASH_REMATCH[2]}"
-	fi
+	local openj9_branch=v0.45.0-release
+	local omr_branch=v0.45.0-release
 
 	#          folder       URL                                               branch          options
 	#          ------       ---                                               ------          -------
