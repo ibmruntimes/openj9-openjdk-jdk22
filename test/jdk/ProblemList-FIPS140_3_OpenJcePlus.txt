@@ -426,12 +426,21 @@ sun/security/krb5/ktab/FileKeyTab.java https://github.com/ibmruntimes/openj9-ope
 sun/security/krb5/ktab/KeyTabIndex.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 sun/security/krb5/runNameEquals.sh https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 sun/security/krb5/auto/Cleaners.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x
-java/lang/ProcessBuilder/JspawnhelperWarnings.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
+java/lang/ProcessBuilder/JspawnhelperWarnings.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 java/lang/String/CompactString/NegativeSize.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
-java/lang/Thread/virtual/stress/GetStackTraceALotWhenPinned.java#id0 https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
+java/lang/Thread/virtual/stress/GetStackTraceALotWhenPinned.java#id0 https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 java/security/Security/ConfigFileTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x
 javax/crypto/CipherSpi/ResetByteBuffer.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-s390x
 java/security/Security/ConfigFileTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
+java/lang/System/LoggerFinder/SignedLoggerFinderTest/SignedLoggerFinderTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/lang/Thread/virtual/ThreadAPI.java#default https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/lang/Thread/virtual/ThreadAPI.java#no-vmcontinuations https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/lang/Thread/virtual/VirtualThreadPinnedEventThrows.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/lang/Thread/virtual/stress/PinALot.java#id0 https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/security/KeyStore/PKCS12/CheckNullDefault.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/util/stream/GathererShortCircuitTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+jdk/internal/util/ReferencedKeyTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/foreign/TestMismatch.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
 #
 # Exclude tests list from extended.openjdk
 #
@@ -967,7 +976,7 @@ sun/security/ssl/CipherSuite/NamedGroupsWithCipherSuite.java https://github.com/
 sun/security/ssl/CipherSuite/SupportedGroups.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x
 sun/security/tools/jarsigner/PreserveRawManifestEntryAndDigest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x
 
-jdk/security/logging/RecursiveEventHelper.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
+jdk/security/logging/RecursiveEventHelper.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 jdk/nio/zipfs/ZipFSTester.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
 serviceability/jvmti/GetOwnedMonitorInfo/GetOwnedMonitorInfoTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
 
@@ -975,4 +984,17 @@ serviceability/jvmti/vthread/SuspendResume2/SuspendResume2.java#default https://
 serviceability/jvmti/vthread/GetThreadState/GetThreadStateTest.java#default https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-s390x
 serviceability/jvmti/vthread/GetThreadState/GetThreadStateTest.java#no-vmcontinuations https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-s390x
 
-serviceability/jvmti/stress/StackTrace/NotSuspended/GetStackTraceNotSuspendedStressTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 aix-all
+serviceability/jvmti/stress/StackTrace/NotSuspended/GetStackTraceNotSuspendedStressTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/io/ByteArrayOutputStream/WriteToReleasesCarrier.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+sun/security/pkcs11/SecretKeyFactory/TestPBKD.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+sun/security/ssl/SSLContextImpl/SSLContextDefault.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+serviceability/jvmti/vthread/GetThreadState/GetThreadStateTest.java#default https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+serviceability/jvmti/vthread/GetThreadState/GetThreadStateTest.java#no-vmcontinuations https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+com/sun/jndi/dns/ConfigTests/PortUnreachable.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+jdk/incubator/vector/Short512VectorTests.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+jdk/incubator/vector/Short64VectorLoadStoreTests.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+jdk/incubator/vector/Vector128ConversionTests.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+jdk/incubator/vector/VectorMaxConversionTests.java#id0 https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+com/sun/jdi/JdwpAttachTest.java.JdwpAttachTest https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/nio/channels/Selector/SelectWithConsumer.java#id0 https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/nio/channels/unixdomain/IOExchanges.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
