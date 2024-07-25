@@ -1,5 +1,5 @@
 # ===========================================================================
-# (c) Copyright IBM Corp. 2023, 2023 All Rights Reserved
+# (c) Copyright IBM Corp. 2023, 2024 All Rights Reserved
 # ===========================================================================
 # This code is free software; you can redistribute it and/or modify it
 # under the terms of the GNU General Public License version 2 only, as
@@ -426,12 +426,13 @@ sun/security/krb5/ktab/FileKeyTab.java https://github.com/ibmruntimes/openj9-ope
 sun/security/krb5/ktab/KeyTabIndex.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 sun/security/krb5/runNameEquals.sh https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 sun/security/krb5/auto/Cleaners.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x
-java/lang/ProcessBuilder/JspawnhelperWarnings.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
+java/lang/ProcessBuilder/JspawnhelperWarnings.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 java/lang/String/CompactString/NegativeSize.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
-java/lang/Thread/virtual/stress/GetStackTraceALotWhenPinned.java#id0 https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
 java/security/Security/ConfigFileTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x
 javax/crypto/CipherSpi/ResetByteBuffer.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-s390x
 java/security/Security/ConfigFileTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
+java/security/KeyStore/PKCS12/CheckNullDefault.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+java/util/stream/GathererShortCircuitTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
 #
 # Exclude tests list from extended.openjdk
 #
@@ -967,12 +968,9 @@ sun/security/ssl/CipherSuite/NamedGroupsWithCipherSuite.java https://github.com/
 sun/security/ssl/CipherSuite/SupportedGroups.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x
 sun/security/tools/jarsigner/PreserveRawManifestEntryAndDigest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x
 
-jdk/security/logging/RecursiveEventHelper.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
+jdk/security/logging/RecursiveEventHelper.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,linux-ppc64le,linux-s390x,aix-all
 jdk/nio/zipfs/ZipFSTester.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
-serviceability/jvmti/GetOwnedMonitorInfo/GetOwnedMonitorInfoTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le,linux-s390x,aix-all
 
-serviceability/jvmti/vthread/SuspendResume2/SuspendResume2.java#default https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-ppc64le
-serviceability/jvmti/vthread/GetThreadState/GetThreadStateTest.java#default https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-s390x
-serviceability/jvmti/vthread/GetThreadState/GetThreadStateTest.java#no-vmcontinuations https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-s390x
-
-serviceability/jvmti/stress/StackTrace/NotSuspended/GetStackTraceNotSuspendedStressTest.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 aix-all
+java/io/ByteArrayOutputStream/WriteToReleasesCarrier.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+sun/security/pkcs11/SecretKeyFactory/TestPBKD.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
+sun/security/ssl/SSLContextImpl/SSLContextDefault.java https://github.com/ibmruntimes/openj9-openjdk-jdk22/issues/68 linux-x64,aix-all,linux-ppc64le,linux-s390x
